@@ -6,7 +6,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  * @author (your name) 
  * @version (a version number or a date)
  */
-public class PipeT extends Pipe
+public class PipeTee extends Pipe
 {
     /**
      * Act - do whatever the PipeT wants to do. This method is called whenever
@@ -14,6 +14,8 @@ public class PipeT extends Pipe
      */
     public void act() 
     {
-        // Add your action code here.
+        if (Greenfoot.mousePressed(this)) {
+            turn(90);
+        }
     }    
 }
