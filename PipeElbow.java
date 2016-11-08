@@ -14,6 +14,8 @@ public class PipeElbow extends Pipe
      */
     public void act() 
     {
-        // Add your action code here.
+        if (Greenfoot.mousePressed(this)) {
+            turn(90);
+        }
     }    
 }
