@@ -15,7 +15,7 @@ public class GasTycoon extends World
      */
     public GasTycoon()
     {    
-        // Create a new world with 10x8 cells with a cell size of 30x30 pixels.
-        super(10, 8, 30); 
+        // Create a new world with 10x8 cells with a cell size of 32x32 pixels.
+        super(10, 8, 32); 
     }
 }
