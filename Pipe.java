@@ -14,6 +14,9 @@ public class Pipe extends Actor
      */
     public void act() 
     {
-        // Add your action code here.
+        if (Greenfoot.mousePressed(this)) {
+            turn(90);
+        }
+
     }    
 }
