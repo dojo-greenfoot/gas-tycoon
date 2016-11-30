@@ -1,16 +1,8 @@
 # Gas Tycoon
 
-A classic pipes laying strategy game.
+<img  src="https://github.com/dojo-greenfoot/gas-tycoon/raw/master/images/gas-tycoon-192x256.png" />
 
-------------------------------------------------------------------------
-This is the project README file. Here, you should describe your project.
-Tell the reader (someone who does not know anything about this project)
-all he/she needs to know. The comments should usually include at least:
-------------------------------------------------------------------------
 
-PROJECT TITLE:
-PURPOSE OF PROJECT:
-VERSION or DATE:
-HOW TO START THIS PROJECT:
-AUTHORS:
-USER INSTRUCTIONS:
+## Background
+
+A clone of the iPhone / iPad  App [Gas Tycoon](https://itunes.apple.com/us/app/gas-tycoon-2/id335957000?mt=8).
