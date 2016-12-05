@@ -96,6 +96,7 @@ target6.x=10
 target6.y=130
 target7.height=50
 target7.name=GasTank
+target7.naviview.expanded=true
 target7.showInterface=false
 target7.type=ClassTarget
 target7.typeParameters=
