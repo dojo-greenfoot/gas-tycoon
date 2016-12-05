@@ -28,6 +28,9 @@ public class GasTycoon extends World
             if (key.equals("s")) {
                 showActors();
             }
+            else if (key.equals("j")) {
+                showActorsAsJson();
+            }
         }
     }
     
@@ -86,4 +89,37 @@ public class GasTycoon extends World
         System.out.println("Actor:" + actor.getClass().getName() + "  x:" + actor.getX() + "  y:" + actor.getY() + "  r:" + actor.getRotation());
     }
 
+    private void showActorsAsJson() {
+        List<Pipe> actors = getObjects(Pipe.class);
+        StringBuilder bldr = new StringBuilder();
+        bldr.append("{\n");
+        bldr.append("\"actors\": [");
+        boolean isFirstActor = true;
+        for (Actor actor : actors) {
+            if (!isFirstActor) {
+                bldr.append(",\n");
+            }
+            showAsJson(bldr, actor);
+            isFirstActor = false;
+        }
+        bldr.append("]\n");
+        bldr.append("}\n");
+        System.out.println(bldr);
+    }
+
+    private void showAsJson(StringBuilder bldr, Actor actor) {
+        bldr.append("{");
+        bldr.append("\n");
+        bldr.append("\"type\": \"").append(actor.getClass().getName()).append("\",");
+        bldr.append("\n");
+        bldr.append("\"x\": ").append(actor.getX()).append(",");
+        bldr.append("\n");
+        bldr.append("\"y\": ").append(actor.getY()).append(",");
+        bldr.append("\n");
+        bldr.append("\"r\": ").append(actor.getRotation()).append("");
+        bldr.append("\n");
+        bldr.append("}");
+        bldr.append("\n");
+    }
+    
 }
